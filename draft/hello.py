@@ -9,3 +9,13 @@ class Foo():
     @staticmethod
     def mult(self):
         return self.value * 2
+
+
+pop_case = {
+    0: 'a',
+    1: 'b',
+    2: 'c'
+}
+
+for e in pop_case:
+    print(e, pop_case[e])

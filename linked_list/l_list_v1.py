@@ -61,15 +61,8 @@ class LinkedList:
 
 
 lst = LinkedList()
-lst.append_node(1)
-lst.append_node(2)
-lst.append_node("a")
+for e in 'abc':
+    lst.append_node(e)
 
-print(lst.head.value)
-
-# foo.pop_node(0)
-# print(foo)
-# foo.pop_node(0)
-# print(foo)
-# foo.pop_node(0)
-# print(foo)
+lst.pop_node(1)
+print(lst)
