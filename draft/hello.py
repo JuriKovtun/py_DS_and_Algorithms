@@ -11,11 +11,20 @@ class Foo():
         return self.value * 2
 
 
-pop_case = {
-    0: 'a',
-    1: 'b',
-    2: 'c'
+data = {
+    'a': 1,
+    'b': 2,
+    'e': 5
 }
 
-for e in pop_case:
-    print(e, pop_case[e])
+
+def bar(a, b, e):
+    print(a, b, e)
+
+
+def barb(**kw):
+    print(kw)
+
+
+bar(**data)
+barb(a=1, b=2, c='3')

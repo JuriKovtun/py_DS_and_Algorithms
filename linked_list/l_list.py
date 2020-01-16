@@ -58,11 +58,3 @@ class LinkedList:
             s += str(node.value) + ' -> '
             node = node.next_node
         return s
-
-
-lst = LinkedList()
-for e in 'abc':
-    lst.append_node(e)
-
-lst.pop_node(1)
-print(lst)
